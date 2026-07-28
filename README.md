@@ -30,3 +30,14 @@ the workspace rendered inside it. Specialized app interfaces may use their own
 colors inside that workspace.
 
 VectorMation is intentionally excluded because its documentation uses Sphinx.
+
+## Shared navigation
+
+`SiteHeader` and `SiteShell` include the global Projects, Blog and About links
+plus a responsive project drawer. Set `projectName` for the drawer heading and
+`currentProjectId` to highlight the active entry. The IDs are defined in
+`components/projects.ts`.
+
+The canonical project list matches the cards on
+`jorisperrenet.com/projects/`. Update both lists together when selected work
+changes.
