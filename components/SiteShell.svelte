@@ -11,7 +11,8 @@
 		projectName = '',
 		projectHref = '',
 		sourceHref = '',
-		workspaceClass = ''
+		workspaceClass = '',
+		localNavigation = false
 	}: {
 		children: Snippet;
 		active?: SiteSection;
@@ -19,11 +20,12 @@
 		projectHref?: string;
 		sourceHref?: string;
 		workspaceClass?: string;
+		localNavigation?: boolean;
 	} = $props();
 </script>
 
 <div class="flex min-h-screen flex-col bg-[#f9fbff] text-gray-900 dark:bg-[#111827] dark:text-gray-100">
-	<SiteHeader {active} {projectName} {projectHref} />
+	<SiteHeader {active} {projectName} {projectHref} {localNavigation} />
 	<main class={`flex-1 ${workspaceClass}`}>{@render children()}</main>
-	<SiteFooter {sourceHref} {projectName} />
+	<SiteFooter {sourceHref} {projectName} {localNavigation} />
 </div>
