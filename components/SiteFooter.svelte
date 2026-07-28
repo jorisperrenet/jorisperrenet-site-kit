@@ -3,12 +3,16 @@
 	let {
 		sourceHref = '',
 		projectName = '',
-		localNavigation = false
-	}: { sourceHref?: string; projectName?: string; localNavigation?: boolean } = $props();
+		localNavigation = false,
+		notice = ''
+	}: { sourceHref?: string; projectName?: string; localNavigation?: boolean; notice?: string } = $props();
 	const year = new Date().getFullYear();
 </script>
 
 <footer class="border-t border-gray-200 bg-[#f9fbff] px-4 py-3 text-center text-sm text-gray-500 dark:border-gray-800 dark:bg-[#111827] dark:text-gray-400">
+	{#if notice}
+		<p class="mx-auto mb-2 mt-0 max-w-3xl text-xs leading-relaxed">{notice}</p>
+	{/if}
 	<p class="m-0 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
 		<span>© {year} Joris Perrenet</span>
 		<span aria-hidden="true">·</span>
