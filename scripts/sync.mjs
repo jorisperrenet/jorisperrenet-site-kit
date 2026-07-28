@@ -14,6 +14,10 @@ for (const targetArg of targets) {
   const destination = join(target, 'src', 'lib', 'site-kit');
   await mkdir(destination, { recursive: true });
   await cp(join(root, 'components'), destination, { recursive: true, force: true });
+  await cp(join(root, 'assets', 'static'), join(target, 'static'), {
+    recursive: true,
+    force: true
+  });
   const marker = {
     source: 'jorisperrenet-site-kit',
     version: JSON.parse(await readFile(join(root, 'package.json'), 'utf8')).version,

@@ -10,8 +10,9 @@ NOTE: A lot of this is AI generated, it was created to help me with my website.
 npm run sync -- ../practice-math ../pet-detective/web
 ```
 
-The command copies the versioned source into `src/lib/site-kit`. Projects remain
-self-contained and deploy independently.
+The command copies the versioned components into `src/lib/site-kit` and the
+shared logo/favicon into `static`. Projects remain self-contained and deploy
+independently.
 
 ## Create a project
 

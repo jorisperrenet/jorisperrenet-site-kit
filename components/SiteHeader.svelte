@@ -37,7 +37,7 @@
 	<div class="relative flex w-full items-center justify-center py-1 pl-4 pr-14 min-[480px]:pr-4">
 		{#if brandLogo}
 			<a href={localNavigation ? '/' : 'https://jorisperrenet.com/'} aria-label="Home" class="absolute left-3 inline-flex h-9 w-9 items-center justify-center rounded-lg transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 sm:left-4">
-				<img src="/favicon.png" alt="" width="690" height="750" class="h-7 w-7 object-contain dark:invert" />
+				<img src="/personal-logo.svg" alt="" width="690" height="750" class="h-7 w-7 object-contain dark:invert" />
 			</a>
 		{:else if projectName}
 			<a href={projectHref || undefined} class="absolute left-4 hidden max-w-[24vw] truncate text-sm font-semibold text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 lg:block">
