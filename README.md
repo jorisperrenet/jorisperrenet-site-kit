@@ -1,8 +1,8 @@
 # Joris Perrenet Site Kit
 
-The shared Svelte and Tailwind shell for projects published on `jorisperrenet.com`.
-It is a normal GitHub repository containing canonical components and a starter,
-not an npm package.
+The shared Svelte and Tailwind shell for projects published on [`jorisperrenet.com`](https://jorisperrenet.com).
+
+NOTE: A lot of this is AI generated, it was created to help me with my website.
 
 ## Sync existing projects
 
